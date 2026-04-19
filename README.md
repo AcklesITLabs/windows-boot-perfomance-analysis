@@ -55,3 +55,8 @@ Measure accurate boot duration and determine whether Fast Startup impacts perfor
 - Analyze startup applications impact  
 - Compare Defender scan timing during boot  
 - Measure BIOS/UEFI initialization time  
+
+---
+
+## 📂 Project Files
+- [Boot Performance Lab Log](logs/2026-04-19_Boot-Performance-Log.md)
