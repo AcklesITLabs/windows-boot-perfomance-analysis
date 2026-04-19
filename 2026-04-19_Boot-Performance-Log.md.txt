@@ -1,0 +1,56 @@
+## 🧪 Lab Log Entry
+
+**Title:** Boot Performance Baseline Test  
+**Date:** 2026-04-19  
+
+---
+
+### 🎯 Objective
+Measure true boot performance after changing Fast Startup settings.
+
+---
+
+### 🖥️ Environment
+- Device: Dell Inspiron 5505  
+- OS: Windows 11 Pro  
+- Tools Used: Event Viewer, Diagnostics-Performance log  
+
+---
+
+### ⚙️ Action Taken
+- Opened Event Viewer  
+- Navigated to: Applications and Services Logs → Microsoft → Windows → Diagnostics-Performance → Operational  
+- Reviewed Event ID 100 boot records  
+- Verified Fast Startup setting  
+- Restarted system  
+- Checked latest boot event  
+
+---
+
+### 📊 Result
+- Boot Duration: 32764 ms (~32.7 seconds)  
+- IsDegradation: false  
+
+---
+
+### ⚠️ Issues / Errors
+- Initial uncertainty about whether restart or shutdown was the correct method for measuring true boot behavior  
+
+---
+
+### 🔧 Fix / Adjustment
+- Confirmed that with Fast Startup OFF, both shutdown and restart perform full boot behavior  
+- Confirmed restart is the most reliable method for testing  
+
+---
+
+### 💡 Key Insight
+- Fast Startup uses hybrid shutdown (partial hibernation), which can affect boot measurement  
+- Restart bypasses Fast Startup and provides a true boot performance test  
+
+---
+
+### 📌 Why It Matters
+- Establishes an accurate boot-time baseline  
+- Demonstrates how to use system logs for performance analysis  
+- Builds real-world troubleshooting skills relevant to IT support roles  
