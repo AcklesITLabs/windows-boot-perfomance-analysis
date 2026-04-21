@@ -1,12 +1,30 @@
-# 🔧 Windows Boot Performance Analysis
+# 🧪 Windows Boot Performance Analysis
 
-## 📌 Overview
+> A structured analysis of Windows boot performance using native system tools and event logging.
+
+---
+
+## 📚 Table of Contents
+- Summary
+- Objective
+- Environment
+- Methodology
+- Results
+- Challenge
+- Resolution
+- Key Takeaways
+- Next Steps
+- Conclusion
+
+---
+
+## 📌 Summary
 This project analyzes Windows boot performance using Event Viewer and the Diagnostics-Performance log. The goal was to establish a true boot-time baseline and understand how Fast Startup affects system behavior.
 
 ---
 
 ## 🎯 Objective
-Measure accurate boot duration and determine whether Fast Startup impacts performance readings.
+Establish a reliable baseline for Windows boot performance and evaluate the impact of Fast Startup on measured boot times.
 
 ---
 
@@ -17,7 +35,7 @@ Measure accurate boot duration and determine whether Fast Startup impacts perfor
 
 ---
 
-## ⚙️ Process
+## ⚙️ Methodology
 1. Opened Event Viewer  
 2. Navigated to Diagnostics-Performance → Operational log  
 3. Identified Event ID 100 (boot performance)  
@@ -33,7 +51,7 @@ Measure accurate boot duration and determine whether Fast Startup impacts perfor
 
 ---
 
-## 🐛 Issues Encountered
+## 🐛 Challenge
 - Uncertainty about whether shutdown or restart produces a true boot measurement  
 
 ---
@@ -51,10 +69,16 @@ Measure accurate boot duration and determine whether Fast Startup impacts perfor
 
 ---
 
-## 🚀 Future Improvements
+## 🚀 Next Steps
 - Analyze startup applications impact  
 - Compare Defender scan timing during boot  
 - Measure BIOS/UEFI initialization time  
+
+---
+
+## 📌 Conclusion
+
+This analysis demonstrates how built-in Windows tools can be used to accurately measure and interpret system boot performance. Disabling Fast Startup provides a more reliable baseline for true system initialization behavior.
 
 ---
 
